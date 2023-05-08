@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>demon slayer</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><a href="#">WebDev Creative</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">about</a></li>
+                <li><a href="services">services</a></li>
+                <li><a href="contact">contact</a></li>
+            </ul>
+            <a href="#" class="action-btn">get STARTED</a>
+            <div class="toggle-btn">
+                
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">about</a></li>
+                <li><a href="services">services</a></li>
+                <li><a href="contact">contact</a></li>
+            </ul>
+            <a href="#" class="action-btn">get STARTED</a>
+        </div>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <main>
+            <section id="hero">
+                <h1>WELCOME</h1>
+                <p>your mind is your best weapon</p>
+            </section>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDownMenu = document.querySelector('.dropdown-menu')
+
+            toggleBtn.onClick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen,
+                 'fa-solid fa-xmark'
+                 ?'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
